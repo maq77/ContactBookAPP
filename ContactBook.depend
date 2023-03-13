@@ -1,4 +1,31 @@
 # depslib dependency file v1.0
-1678289989 source:c:\users\hp\desktop\contactbook\main.cpp
+1678707984 source:f:\contactbook\contact.cpp
+	"Contact.h"
 	<iostream>
+
+1678708046 f:\contactbook\contact.h
+	"PhoneNumber.h"
+
+1678710473 source:f:\contactbook\main.cpp
+	<iostream>
+	<stdlib.h>
+	<string>
+	<unistd.h>
+	"ContactBook.h"
+
+1678463847 f:\contactbook\phonenumber.h
+	<string>
+
+1678463627 source:f:\contactbook\phonenumber.cpp
+	"PhoneNumber.h"
+	<iostream>
+
+1678709893 source:f:\contactbook\contactbook.cpp
+	"ContactBook.h"
+	<iostream>
+	<stdlib.h>
+	<unistd.h>
+
+1678708333 f:\contactbook\contactbook.h
+	"Contact.h"
 
