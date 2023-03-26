@@ -12,7 +12,7 @@ string email;
 int id;
 ////int phone;
 int phonecount=0;
-int z=0;
+//int z=0;
 char ch;
 //PhoneNumber b[10];
 
@@ -25,9 +25,10 @@ void setContact(int ID , string FNAME , string LNAME , string EMAIL);
 void setPhoneCount(int newcount);
 void showContact();
 string findFname();
-int findId();
 string findLname();
 string findEmail();
+char findFletter();
+int findId();
 int PhoneCount();
 };
 

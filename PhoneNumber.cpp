@@ -5,8 +5,26 @@ using namespace std;
      void PhoneNumber::getPhone(){
      cout<<"\t\tEnter Phone Number : ";
      cin>> num;
-     cout<<"\t\tEnter Phone Type (Home , Mobile or Work) : ";
-     cin>>type;
+     cout<<"\t\tEnter First Letter of Phone Type (Home , Mobile or Work) : ";
+     cin>>PhoneTypeLetter;
+     switch(PhoneTypeLetter){
+     case 'H':
+     case 'h':
+        type = "Home";
+         break;
+     case 'M':
+     case 'm':
+        type = "Mobile";
+         break;
+     case 'W':
+     case 'w':
+        type = "Work";
+        break;
+     default:
+        type = "Null";
+        break;
+     }
+
      }
      void PhoneNumber::showPhone(){
      cout<<"\t\tPhone Number : "<<num<<endl;

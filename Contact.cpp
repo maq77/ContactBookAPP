@@ -1,5 +1,6 @@
 #include "Contact.h"
 #include <iostream>
+#include <string>
 using namespace std;
 
 
@@ -8,7 +9,7 @@ cout<<"\t\tEnter id : " ; cin>>id;
 cout<<"\t\tEnter First name : " ; cin>>fname;
 cout<<"\t\tEnter Last name : " ; cin>>lname;
 cout<<"\t\tEnter Email : " ; cin>>email;
-for(;z<10;){
+for(int z=0;z<10;){
     do{
     b[z].getPhone();
     z++;
@@ -50,6 +51,9 @@ for(int z=0;z<phonecount;z++){
 
 string Contact::findFname(){
 return fname;
+}
+char Contact::findFletter(){
+return fname[0];
 }
 int Contact::findId(){
 return id;

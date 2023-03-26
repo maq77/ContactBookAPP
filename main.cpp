@@ -10,6 +10,7 @@ int main()
 {
     int choose;
     char ch;
+    int Find;
     char bye = 1 ;
     ContactBook a;
     cout<<"\n \t\t---------------Contact App---------------"<<endl;
@@ -31,7 +32,7 @@ int main()
     break;
     case 2 :
     cout<<"\t\t\t --------------- Show All Contacts ---------------"<<endl;
-    cout<<"\t\t "; a.DisplayAll();
+    cout<<"\t\t "; a.SortContacts(); a.DisplayAll();
     cout<<"\t\t\t\t ---> Wait for 3 Seconds <--- "<<endl;
     sleep(3);
     system("cls");
@@ -45,7 +46,17 @@ int main()
     break;
     case 4 :
     cout<<"\t\t\t --------------- Search For Contact ---------------"<<endl;
-    cout<<"\t\t "; a.Search();
+    cout<<"\t\t1- Search By ID"<<"\n\t\t2- Search By Phone Number ";
+    cout<<"\n\t\t >>>> "; cin>>Find;
+    switch(Find){
+    case 1:
+        cout<<"\t\t "; a.FindByID();
+        break;
+    case 2:
+        cout<<"\t\t "; a.FindByPhone();
+        break;
+
+    }
     cout<<"\t\t\t\t ---> Wait for 3 Seconds <--- "<<endl;
     sleep(3);
     system("cls");

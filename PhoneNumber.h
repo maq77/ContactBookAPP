@@ -7,6 +7,7 @@ class PhoneNumber{
 private:
      int num;
      string type;
+     char PhoneTypeLetter;
 public:
 
      void getPhone();
